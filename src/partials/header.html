@@ -1,6 +1,38 @@
-<header>
-  <div class="logo">
-    <img src="" alt="" class="logo" />
-    <p>Filmoteka</p>
+<header class="header">
+  <div class="container">
+    <div class="header__content-wrapper">
+      <a href="index.html" class="logo link">
+        <svg class="logo__icon">
+          <use
+            lang="en"
+            aria-label="Logo icon"
+            href="../src/images/svg/sprite.svg#film"
+          ></use>
+        </svg>
+        Filmoteka
+      </a>
+      <form class="search-form js-search-form">
+        <input
+          type="text"
+          class="search-form__input js-search-input"
+          placeholder="Movie search"
+        />
+        <svg class="search-form__icon">
+          <use
+            lang="en"
+            aria-label="search-form icon"
+            href="../src/images/svg/sprite.svg#search"
+          ></use>
+        </svg>
+
+        <p class="js-search-result-error search-form-error is-hidden">
+          Search result not successful. Enter the correct movie name and
+        </p>
+      </form>
+      <nav class="navigation">
+        <a href="./index.html" class="navigation-link link current">Home</a>
+        <a href="#" class="navigation-link link">My library</a>
+      </nav>
+    </div>
   </div>
 </header>

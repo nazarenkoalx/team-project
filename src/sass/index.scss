@@ -1,2 +1,12 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/container';
+
+// layout
+@import './layout/header';
+@import './layout/gallery';
+@import './layout/footer';
+
+// components
+@import './utils/hidden-title';
+@import './components/current';
+@import './utils/visually-hidden';

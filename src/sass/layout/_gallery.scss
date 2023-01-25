@@ -1,0 +1,50 @@
+.gallery {
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.gallery_card {
+  flex-basis: calc((100% - 32px) / 3);
+}
+.gallery_card-link {
+}
+
+.gallery_card-film-poster-image {
+  border-radius: 5px;
+}
+.gallery_card-film-description {
+  padding-top: 12px;
+}
+.gallery_card-film-description-name {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.gallery_card-film-description-info {
+  display: flex;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
+  color: #ff6b08;
+}
+.gallery_card-film-description-info-genre {
+  border-right: 2px solid #ff6b08;
+  padding-right: 7px;
+}
+.gallery_card-film-description-info-production-year {
+  padding-left: 7px;
+}

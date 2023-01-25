@@ -1,0 +1,8 @@
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity var(--animation-duration) var(--animation-timing-function),
+    visibility var(--animation-duration) var(--animation-timing-function);
+}
