@@ -13,13 +13,22 @@ export function createGalleryMarkup(response) {
       if (newArrGenre.length >= 3) {
         newArrGenre.splice(2, newArrGenre.length - 2, 'Other');
       }
-      const startDate = result.release_date.split('').slice(0, 4).join('');
-
+      let startDate = '';
+      //   console.log(Object.keys(result).includes('release_date'));
+      if (Object.keys(result).includes('release_date')) {
+        if (result.release_date !== '') {
+          startDate = result.release_date.split('').slice(0, 4).join('');
+        }
+      }
+      let poster;
+      if (result.poster_path !== null) {
+        poster = `https://image.tmdb.org/t/p/w500/${result.poster_path}`;
+      }
       return `<li class="gallery_card">
             <a href="#" class="gallery_card-link link">
              <div class="gallery_card-film-poster">
                 <img
-                 src="https://image.tmdb.org/t/p/w500/${result.poster_path}"
+                 src="${poster}"
                    width="395px"
                    height="574px"
                    alt=""
